@@ -1,0 +1,15 @@
+[System]
+Name=PE1
+Description=ERP Production
+Client=800
+[User]
+Name=J7100156
+Language=EN
+[Function]
+Title=Print Voucher
+Command=ZFI_JAP_JRNL
+[Configuration]
+GuiSize=Maximized
+WorkDir=C:\Users\J7100156.EAJB\OneDrive - juffali.com.sa\Desktop\SAP
+[Options]
+Reuse=1
