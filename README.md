@@ -1,3 +1,3 @@
 # SAP-Automation
-SAP Automation Modules - Created with Multiple Languages, primarily AutoHotKey (AHK)
+SAP Automation Modules - Created with Multiple Languages, primarily AutoHotKey (AHK) & compiled with Inno Setup.
 Download the Setup File Only for Running the Application. No Need to Donwload the Setup Folder.
