@@ -6,6 +6,14 @@ SendMode Input ; Recommended for new scripts due to its superior speed and relia
 SetWorkingDir %A_ScriptDir% ; Ensures a consistent starting directory.
 SetTitleMatchMode, RegEx
 
+/*
+Created By:
+Muhannad Kamal
++966531577001
+calibr3.io@gmail.com
+https://github.com/Calibr3-IO
+*/
+
 setKeyDelay, 0
 Clipboard := ; Erase clipboard
 
@@ -14,6 +22,7 @@ sap_wb := XL.Workbooks("SAP Document Auto Print.xlsb").Activate
 sap_ws := XL.Worksheets(1)
 
 ;Document Auto Print
+
 row := 2
 
 If (sap_ws.Range("B" row).Value) = ""
@@ -37,7 +46,7 @@ Loop
 {
     If (sap_ws.Range("B" row).Value) = ""
     {
-        MsgBox, 64, SAP Document Auto Print, Done Printing All Documents :), 5
+        MsgBox, 64, SAP Document Auto Print, Done Printing All Documents :)`nCreated By Muhannad Kamal`n+966531577001`ncalibr3.io@gmail.com`n https://github.com/Calibr3-IO, 11
         ExitApp
     }
     Else
@@ -110,4 +119,10 @@ Loop
     Pause::Pause
     ^Home::Reload
 
-    ;Created By Muhannad Kamal
+/*
+Created By:
+Muhannad Kamal
++966531577001
+calibr3.io@gmail.com
+https://github.com/Calibr3-IO
+*/

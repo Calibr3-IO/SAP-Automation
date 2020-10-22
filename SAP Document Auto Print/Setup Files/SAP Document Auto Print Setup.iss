@@ -22,9 +22,9 @@ DefaultDirName=C:\SAP Automation\{#MyAppName}
 DisableDirPage=yes
 DefaultGroupName=SAP Automation
 DisableProgramGroupPage=yes
-LicenseFile=C:\SAP Automation\SAP Document Auto Print\Lisence.txt
+LicenseFile=C:\Users\J7100156.EAJB\OneDrive - juffali.com.sa\Documents\GitHub\SAP-Automation\SAP Document Auto Print\Setup Files\License.txt
 ;InfoBeforeFile=C:\SAP Automation\SAP Document Auto Print\SAP Document Auto Print Notes.txt
-InfoAfterFile=C:\SAP Automation\SAP Document Auto Print\SAP Document Auto Print Notes.txt
+InfoAfterFile=C:\Users\J7100156.EAJB\OneDrive - juffali.com.sa\Documents\GitHub\SAP-Automation\SAP Document Auto Print\Setup Files\SAP Document Auto Print Notes.txt
 ; Remove the following line to run in administrative install mode (install for all users.)
 PrivilegesRequired=lowest
 PrivilegesRequiredOverridesAllowed=dialog
@@ -42,8 +42,8 @@ Name: "english"; MessagesFile: "compiler:Default.isl"
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"
 
 [Files]
-Source: "C:\SAP Automation\SAP Document Auto Print\SAP Document Auto Print.xlsb"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\SAP Automation\SAP Document Auto Print\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "C:\Users\J7100156.EAJB\OneDrive - juffali.com.sa\Documents\GitHub\SAP-Automation\SAP Document Auto Print\Setup Files\SAP Document Auto Print.xlsb"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\J7100156.EAJB\OneDrive - juffali.com.sa\Documents\GitHub\SAP-Automation\SAP Document Auto Print\Setup Files\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Icons]
