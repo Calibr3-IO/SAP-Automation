@@ -23,14 +23,14 @@ DisableDirPage=yes
 DefaultGroupName=SAP Automation
 DisableProgramGroupPage=yes
 LicenseFile=C:\SAP Automation\SAP Document Auto Print\Lisence.txt
-InfoBeforeFile=C:\SAP Automation\SAP Document Auto Print\SAP Document Auto Print Notes.txt
+;InfoBeforeFile=C:\SAP Automation\SAP Document Auto Print\SAP Document Auto Print Notes.txt
 InfoAfterFile=C:\SAP Automation\SAP Document Auto Print\SAP Document Auto Print Notes.txt
 ; Remove the following line to run in administrative install mode (install for all users.)
 PrivilegesRequired=lowest
 PrivilegesRequiredOverridesAllowed=dialog
-OutputDir=C:\InnoSetups\SAP Document Auto Print
+OutputDir=C:\Users\J7100156.EAJB\OneDrive - juffali.com.sa\Documents\GitHub\SAP-Automation\SAP Document Auto Print
 OutputBaseFilename=SAP Document Auto Print Setup
-SetupIconFile=C:\Users\J7100156.EAJB\OneDrive - juffali.com.sa\Pictures\Icons\automation-512.ico
+SetupIconFile=C:\Users\J7100156.EAJB\OneDrive - juffali.com.sa\Documents\GitHub\SAP-Automation\SAP Document Auto Print\Setup Files\automation-512.ico
 Compression=lzma
 SolidCompression=yes
 WizardStyle=modern

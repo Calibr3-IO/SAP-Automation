@@ -28,9 +28,9 @@ InfoAfterFile=C:\SAP Automation\SAP Voucher Entry\Lisence.txt
 ; Remove the following line to run in administrative install mode (install for all users.)
 PrivilegesRequired=lowest
 PrivilegesRequiredOverridesAllowed=dialog
-OutputDir=C:\InnoSetups\SAP Voucher Entry
+OutputDir=C:\Users\J7100156.EAJB\OneDrive - juffali.com.sa\Documents\GitHub\SAP-Automation\SAP Voucher Entry
 OutputBaseFilename=SAP Multiple Voucher Entry Setup
-SetupIconFile=C:\Users\J7100156.EAJB\OneDrive - juffali.com.sa\Pictures\Icons\automation-512.ico
+SetupIconFile=C:\Users\J7100156.EAJB\OneDrive - juffali.com.sa\Documents\GitHub\SAP-Automation\SAP Voucher Entry\Setup Files\automation-512.ico
 Compression=lzma
 SolidCompression=yes
 WizardStyle=modern
