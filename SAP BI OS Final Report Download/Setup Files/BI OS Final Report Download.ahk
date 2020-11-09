@@ -32,21 +32,7 @@ SplashImage,J Logo.jpg, B X716 Y0 ZH47
 PP_Year := A_YYYY - 2
 P_Year := A_YYYY - 1
 
-  InputBox, Date, Input Date, Date as MMYYYY`nExample for JUL 2020 - Enter as 072020`n`n
-|                  %PP_Year%              %P_Year%              %A_YYYY%`n
-|              ------------      ------------      ------------`n
-| JAN   -      01%PP_Year%         01%P_Year%          01%A_YYYY%`n
-| FEB    -      02%PP_Year%         02%P_Year%          02%A_YYYY%`n
-| MAR  -      03%PP_Year%         03%P_Year%          03%A_YYYY%`n
-| APR   -      04%PP_Year%         04%P_Year%          04%A_YYYY%`n
-| MAY   -     05%PP_Year%         05%P_Year%          05%A_YYYY%`n
-| JUN   -     06%PP_Year%         06%P_Year%          06%A_YYYY%`n
-| JUL    -     07%PP_Year%         07%P_Year%          07%A_YYYY%`n
-| AUG   -     08%PP_Year%         08%P_Year%          08%A_YYYY%`n
-| SEP    -     09%PP_Year%         09%P_Year%          09%A_YYYY%`n
-| OCT  -      10%PP_Year%         10%P_Year%          10%A_YYYY%`n
-| NOV  -      11%PP_Year%         11%P_Year%          11%A_YYYY%`n
-| DEC   -      12%PP_Year%         12%P_Year%          12%A_YYYY%`n, ,375 ,410 , , , , , %A_MM%%A_YYYY%
+  InputBox, Date, Input Date, Date as YYYYMM`nExample for JUL 2020 - Enter as 072020`n`n, , , , , , , ,%A_YYYY%%A_MM%
 If ErrorLevel = 1
   ExitApp
 
@@ -58,7 +44,7 @@ InputBox, report, Report Type, Input Report Type:`n`n010 - Actual`n020 - Plan`n0
 if ErrorLevel = 1
   ExitApp
 
-FormatTime, Date2 , %Date%, MMyy
+FormatTime, Date1, %Date%, MMyyyy
 
 If (company = 7100)
 {
@@ -191,6 +177,8 @@ Sleep, 1500
 Progress, 30, - Selecting Profit Centre -
 
 ;-----Profit Centre Selection-----
+FormatTime, Date2, %Date%, MMyy
+
 Loop, Read, %file%
 {
   prog_index := A_Index
