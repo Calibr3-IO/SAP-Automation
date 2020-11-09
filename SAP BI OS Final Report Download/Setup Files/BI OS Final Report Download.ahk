@@ -29,10 +29,7 @@ JTB := "BI OS Final Report Download - JTECO Bahrain.txt"
 Progress, B CBRed CWWhite X771 Y0 H47 ZX5 ZY5 ZH15 FS11 P0,- Starting BI OS Report Run -
 SplashImage,J Logo.jpg, B X716 Y0 ZH47
 
-PP_Year := A_YYYY - 2
-P_Year := A_YYYY - 1
-
-  InputBox, Date, Input Date, Date as YYYYMM`nExample for JUL 2020 - Enter as 072020`n`n, , , , , , , ,%A_YYYY%%A_MM%
+  InputBox, Date, Input Date, Date as YYYYMM`nExample for JUL 2020 - Enter as 202007`n`n, , , , , , , ,%A_YYYY%%A_MM%
 If ErrorLevel = 1
   ExitApp
 

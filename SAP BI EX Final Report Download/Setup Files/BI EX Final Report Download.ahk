@@ -33,7 +33,7 @@ InputBox, Date, Input Date, Date as YYYYMM`nExample for JUL 2020 - Enter as 2020
 
 InputBox, Company, Company Code, Input Company Code:`n`n7100 - JTECO`n2500 - JAPCO`n3400 - JAHACO, , , , , , , , 7100
 
-FormatTime, Date2 , %Date%, MMyy
+FormatTime, Date1, %Date%, YYYYMM
 
 If (company = 7100)
 {
@@ -165,6 +165,8 @@ Loop ;Main Prompts Window Color Check - Initial
 ;-----Date Selection-----
 
 ;-----Cost Centre Selection-----
+FormatTime, Date2, %Date%, MMyy
+
 Progress, 30, - Cost Centre Selection -
 Loop ;Main Prompts Window Color Check - Initial
 {

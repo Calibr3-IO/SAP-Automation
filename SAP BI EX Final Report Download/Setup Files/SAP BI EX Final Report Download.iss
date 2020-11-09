@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "SAP BI EX Final Report Download"
-#define MyAppVersion "1.1"
+#define MyAppVersion "1.2"
 #define MyAppPublisher "Muhannad Kamal"
 #define MyAppURL "https://github.com/Calibr3-IO"
 #define MyAppExeName "BI EX Final Report Download.exe"
