@@ -260,7 +260,7 @@ Loop, read, %file%
   
   ;-----Report Rename-----
   Sleep, 1000
-  Click, 1843, 170, 2 ;Select Design Button
+  Click, 1847, 197, 2 ;Select Design Button
   Sleep, 1500
   Loop
   {
@@ -269,9 +269,9 @@ Loop, read, %file%
       Break
   }
   Sleep, 2100
-  Click, 798, 336, 3 ;Select Header Cell
+  Click, 864, 363, 3 ;Select Header Cell
   Sleep, 2100
-  SendInput, %ReportName%
+  SendInput, %fileParse1%
   Sleep, 1500
   SendInput, {Enter}
   ; Sleep, 1500
@@ -284,7 +284,7 @@ Loop, read, %file%
   Sleep, 1500
   SendInput, {Enter}
   Sleep, 1500
-  Click, 1785, 170, 2 ;Select Reading Button
+  Click, 1773, 197, 2 ;Select Reading Button
   Sleep, 1500
   Loop
   {
