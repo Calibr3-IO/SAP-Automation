@@ -236,7 +236,7 @@ Loop, read, %file%
     Click, 1129, 561, 2 ;Select Profit Center
     Sleep, 1500
     SendInput, {Tab}
-    Sleep, 1500
+    Sleep, 3100
   }
   Click, 1228, 800 ;Select Ok
   Sleep, 2500
@@ -261,12 +261,11 @@ Loop, read, %file%
       Break
   }
   Sleep, 2100
-  Click, 864, 363, 2 ;Select Header Cell
+  Click, 881, 366, 2 ;Select Header Cell
   Sleep, 2100
   SendInput, %fileParse1%
   Sleep, 1500
   SendInput, {Enter}
-  ; Sleep, 1500
   Loop
   {
     Sleep, 1111
