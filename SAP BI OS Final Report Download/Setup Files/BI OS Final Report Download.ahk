@@ -218,7 +218,7 @@ Loop, read, %file%
 
   fileline := A_LoopReadLine
 
-  stringsplit, fileParse, fileline, "-"
+  stringsplit, fileParse, fileline, "#"
 
   Loop, parse, fileParse2, CSV, %A_Space%%A_Tab%
   {
