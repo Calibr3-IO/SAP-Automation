@@ -23,7 +23,7 @@ DisableDirPage=yes
 DefaultGroupName=SAP Automation
 DisableProgramGroupPage=yes
 LicenseFile=C:\Users\J7100156.EAJB\OneDrive - juffali.com.sa\Documents\GitHub\SAP-Automation\SAP BI OS Final Report Download\Setup Files\License.txt
-;InfoBeforeFile=C:\SAP Automation\SAP Document Auto Print\SAP Document Auto Print Notes.txt
+; InfoBeforeFile=C:\SAP Automation\SAP Document Auto Print\SAP Document Auto Print Notes.txt
 InfoAfterFile=C:\Users\J7100156.EAJB\OneDrive - juffali.com.sa\Documents\GitHub\SAP-Automation\SAP BI OS Final Report Download\Setup Files\License.txt
 ; Remove the following line to run in administrative install mode (install for all users.)
 PrivilegesRequired=lowest
