@@ -209,14 +209,6 @@ Loop, read, %file%
   Sleep, 1111
   SendInput, {ShiftDown}{End}{ShiftUp}
   Sleep, 1111
-  SendInput, {ShiftDown}{Tab 2}{ShiftUp}
-  Sleep, 1111
-  SendInput, {Space}
-  Sleep, 1111
-  Click, 1270, 510 ;Existing Data
-  Sleep, 1111
-  SendInput, {ShiftDown}{End}{ShiftUp}
-  Sleep, 1111
   SendInput, {ShiftDown}{Tab}{ShiftUp}
   Sleep, 1111
   SendInput, {Space}
