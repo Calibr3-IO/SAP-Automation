@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "SAP BI OS Final Report Download"
-#define MyAppVersion "1.0"
+#define MyAppVersion "1.1"
 #define MyAppPublisher "Muhannad Kamal"
 #define MyAppURL "https://github.com/Calibr3-IO"
 #define MyAppExeName "BI OS Final Report Download.exe"
@@ -29,7 +29,7 @@ InfoAfterFile=C:\Users\J7100156.EAJB\OneDrive - juffali.com.sa\Documents\GitHub\
 PrivilegesRequired=lowest
 PrivilegesRequiredOverridesAllowed=dialog
 OutputDir=C:\Users\J7100156.EAJB\OneDrive - juffali.com.sa\Documents\GitHub\SAP-Automation\SAP BI OS Final Report Download
-OutputBaseFilename=SAP BI OS Final Report Download
+OutputBaseFilename=SAP BI OS Final Report Download Setup
 SetupIconFile=C:\Users\J7100156.EAJB\OneDrive - juffali.com.sa\Documents\GitHub\SAP-Automation\SAP BI OS Final Report Download\Setup Files\automation-512.ico
 Compression=lzma
 SolidCompression=yes
