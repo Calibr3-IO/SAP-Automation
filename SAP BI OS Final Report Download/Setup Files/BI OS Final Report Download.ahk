@@ -135,7 +135,7 @@ Click, 794, 524 ;Month Selection
 Sleep, 1500
 Progress, 13, - Searching Date -
 Click, 1096, 720 ;Month Search Entry Area
-SendInput, %Date%
+SendInput, %Date1%
 Sleep, 1111
 SendInput, {Enter}
 Sleep, 1500
