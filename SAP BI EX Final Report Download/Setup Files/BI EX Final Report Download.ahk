@@ -297,7 +297,22 @@ Loop, read, %file%
   Sleep, 1111
   WinActivate, Save As ahk_exe iexplore.exe ahk_class #32770
   Sleep, 1500
-  SendInput, %A_Index%. JP Summary of Expenses %fileParse1% %Date2%
+    If (company = 7100)
+  {
+    SendInput, %A_Index%. JT Summary of Expenses %fileParse1%%Date2%
+  }
+  If (company = 2500)
+  {
+    SendInput, %A_Index%. JP Summary of Expenses %fileParse1%%Date2%
+  }
+  If (company = 3400)
+  {
+    SendInput, %A_Index%. JH Summary of Expenses %fileParse1%%Date2%
+  }
+  If (company = 7600)
+  {
+    SendInput, %A_Index%. JTB Summary of Expenses %fileParse1%%Date2%
+  }
   Sleep, 1500
   Click, 785, 476 ;Save File
   Sleep, 1500
