@@ -20,7 +20,6 @@ ListLines Off
 CoordMode Mouse, Client
 CoordMode Pixel, Client
 
-
 JT := "BI OS Final Report Download - JTECO.txt"
 JP := "BI OS Final Report Download - JAPCO.txt"
 JH := "BI OS Final Report Download - JAHACO.txt"
@@ -29,8 +28,8 @@ JTB := "BI OS Final Report Download - JTECO Bahrain.txt"
 Progress, B CBRed CWWhite X771 Y0 H47 ZX5 ZY5 ZH15 FS11 P0,- Starting BI OS Report Run -
 SplashImage,J Logo.jpg, B X716 Y0 ZH47
 
-  InputBox, Date, Input Date, Date as YYYYMM`nExample for JUL 2020 - Enter as 202007`n`n, , , , , , , ,%A_YYYY%%A_MM%
-If ErrorLevel = 1
+InputBox, Date, Input Date, Date as YYYYMM`nExample for JUL 2020 - Enter as 202007`n`n, , , , , , , ,%A_YYYY%%A_MM%
+  If ErrorLevel = 1
   ExitApp
 
 InputBox, company, Input Company Code, Input Company Code:`n`n7100 - JTECO`n2500 - JAPCO`n3400 - JAHACO`n7600 - JTECO Bahrain, , ,230 , , , , , 7100
@@ -59,12 +58,16 @@ If (company = 7600)
 {
   file := % JTB
 }
-
+Run, "C:\Program Files\Internet Explorer\iexplore.exe" http://boprdas1:8080/BOE/BI?startFolder=FsajG1yZuAoA52YAAADH0vYRAFBWiGCp&isCat=false
+Sleep, 500
+WinWait, ahk_class IEFrame ahk_exe iexplore.exe
+Sleep, 500
 WinActivate, ahk_class IEFrame ahk_exe iexplore.exe
-Sleep, 1500
-SendInput, ^0 ;Default Browser Zoom
-Progress, 1
-
+Sleep, 500
+WinWaitActive, ahk_class IEFrame ahk_exe iexplore.exe
+Sleep, 500
+WinMaximize, ahk_class IEFrame ahk_exe iexplore.exe
+Sleep, 500
 ;-----Company Selection-----
 Loop ;Initial Load Check
 {
@@ -73,6 +76,8 @@ Loop ;Initial Load Check
     Break
 }
 Sleep, 1500
+SendInput, ^0 ;Default Browser Zoom
+Progress, 1
 Loop ;Main Window Selection Load Check
 {
   PixelGetColor, OutputVar, 1049, 791, RGB
@@ -234,7 +239,7 @@ Loop, read, %file%
   }
   Sleep, 1500
   SendInput, {Enter}
-  
+
   ;-----Report Rename-----
   Sleep, 1000
   Click, 1847, 197, 2 ;Select Design Button
