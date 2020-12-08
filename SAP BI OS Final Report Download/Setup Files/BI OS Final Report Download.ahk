@@ -75,9 +75,10 @@ Loop ;Initial Load Check
   If OutputVar != 0XE6E6E6
     Break
 }
+Progress, 1
 Sleep, 1500
 SendInput, ^0 ;Default Browser Zoom
-Progress, 1
+
 Loop ;Main Window Selection Load Check
 {
   PixelGetColor, OutputVar, 1049, 791, RGB

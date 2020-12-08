@@ -52,10 +52,15 @@ If (company = 7600)
   file := % JTB
 }
 
+Run, "C:\Program Files\Internet Explorer\iexplore.exe" http://boprdas1:8080/BOE/BI?startFolder=FsajG1yZuAoA52YAAADH0vYRAFBWiGCp&isCat=false
+Sleep, 500
+WinWait, ahk_class IEFrame ahk_exe iexplore.exe
+Sleep, 500
 WinActivate, ahk_class IEFrame ahk_exe iexplore.exe
-Sleep, 1500
-SendInput, ^0 ;Default Browser Zoom
-Progress, 1
+Sleep, 500
+WinWaitActive, ahk_class IEFrame ahk_exe iexplore.exe
+Sleep, 500
+WinMaximize, ahk_class IEFrame ahk_exe iexplore.exe
 
 ;-----Company Selection-----
 Loop ;Main Prompts Window Color Check - Initial
@@ -67,6 +72,9 @@ Loop ;Main Prompts Window Color Check - Initial
   If OutputVar = 0XE5EAF3
     Break
 }
+Progress, 1
+Sleep, 1500
+SendInput, ^0 ;Default Browser Zoom
 
 Progress, 5, - Company Selection -
 Sleep, 1500
