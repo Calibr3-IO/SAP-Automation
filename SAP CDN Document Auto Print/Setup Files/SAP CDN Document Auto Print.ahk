@@ -84,10 +84,12 @@ Loop
             If A_Cursor != Wait
                 Break
         }
-        ;WinActivate, .*Print ahk_class SAP_FRONTEND_SESSION
-        ;WinWaitActive, .*Print ahk_class SAP_FRONTEND_SESSION
+        WinActivate, .*Print ahk_class SAP_FRONTEND_SESSION
+        WinWaitActive, .*Print ahk_class SAP_FRONTEND_SESSION
         Sleep, 1500
-        Click, 337, 17
+        Click, 70, -9
+        Sleep, 1500
+        Click, 69, 9
         Sleep, 1500
         Loop,2 ;Mouse Cursor Wait Check
         {
