@@ -3,6 +3,7 @@
 3. Do not Touch the Formulas or edit anything, only add Voucher Numbers in Column A, from Row 2 as mentioned in 1.
 4. SAP GUI Shortcut is needed in Working Directory (Current Folder) and renamed as "PE1  Credit , Debit Memo Print.sap"
 5. Run multiple printing from inside excel.
+6. SAP GUI needs to be Blue Crystal Theme.
 
 
 

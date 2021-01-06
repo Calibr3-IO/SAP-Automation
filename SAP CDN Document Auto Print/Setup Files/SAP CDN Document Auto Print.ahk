@@ -87,9 +87,7 @@ Loop
         WinActivate, .*Print ahk_class SAP_FRONTEND_SESSION
         WinWaitActive, .*Print ahk_class SAP_FRONTEND_SESSION
         Sleep, 1500
-        Click, 70, -9
-        Sleep, 1500
-        Click, 69, 9
+        Click, 356, 17
         Sleep, 1500
         Loop,2 ;Mouse Cursor Wait Check
         {
@@ -101,7 +99,7 @@ Loop
         WinWaitActive, Print
         SendInput, {Enter}
         Sleep, 1111
-        Click, 260, 17
+        Click, 265, 14
     }
     Sleep, 1111
     row++
