@@ -1,0 +1,15 @@
+[System]
+Name=PE1
+Description=ERP Production
+Client=800
+[User]
+Name=J7100156
+Language=EN
+[Function]
+Title= Credit / Debit Memo Print
+Command=ZFI_JAP_CRDR
+[Configuration]
+GuiSize=Maximized
+WorkDir=C:\Users\J7100156.EAJB\OneDrive - juffali.com.sa\Desktop
+[Options]
+Reuse=1

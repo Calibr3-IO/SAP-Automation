@@ -1,0 +1,16 @@
+1. Enter Voucher Numbers in Column A, from Row 2 onwards
+2. Multiple Vouchers can be printed per Company Only. (1 Company, Multiple Voucher, then enter for another company if needed)
+3. Do not Touch the Formulas or edit anything, only add Voucher Numbers in Column A, from Row 2 as mentioned in 1.
+4. SAP GUI Shortcut is needed in Working Directory (Current Folder) and renamed as "PE1  Credit , Debit Memo Print.sap"
+5. Run multiple printing from inside excel.
+
+
+
+
+-------------------------------------
+Created By
+
+Muhannad Kamal
++966531577001
+calibr3.io@gmail.com
+https://github.com/Calibr3-IO
